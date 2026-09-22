@@ -1,0 +1,109 @@
+.customersSection {
+  margin-top: 5rem;
+  padding: 32px 50px 32px 50px;
+  background-color: #f5f7fa;
+}
+.customersSectionContents {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  align-items: center;
+  justify-content: center;
+}
+.imgleft {
+      max-width: 100%;
+  height: 300px;
+  display: block;
+}
+.customersSectionRight {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.customersSectionRightContent1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.customersSectionRightContent1 p {
+width: 500px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #717171;
+  font-size: 18px;
+  
+}
+
+.customersSectionRightName {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.customersSectionRightName h4 {
+  color: var(--primary-color);
+}
+.customersSectionRightName p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #89939e;
+}
+.customersSectionClientsLogos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+
+  /* width: 100%; */
+}
+.alllogos{
+    display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.customersSectionClientsLogos img {
+  /* width: 100%;
+  height: 100%; */
+}
+.customersSectionLink {
+  display: flex;
+  align-items: center;
+  /* grid-area: 4px; */
+}
+.customersSectionLink a {
+  color: #4caf4f;
+  text-decoration: none;
+}
+
+          @media screen and (max-width: 900px) {
+
+
+.customersSectionContents {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0;
+}
+
+.customersSectionRightContent1 p{
+  width: 100%;
+}
+.customersSectionClientsLogos{
+display: flex;
+flex-direction: column;
+
+
+
+}
+
+.alllogos{
+flex-wrap: wrap;
+
+    gap: 2.5rem 1.5rem; 
+  justify-content: center;
+}
+.alllogos img{
+max-width: 75px; 
+          }}

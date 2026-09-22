@@ -1,0 +1,119 @@
+/* Base Layout & Wrapper Frame Container */
+.heroContents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem; /* Reduced from 20rem to make room for content */
+  background-color: #f5f7fa;
+  min-height: 80vh; /* Adjusts height beautifully relative to device height screens */
+  padding: 40px 24px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Inner Layout Columns split context logic wrappers */
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1.2;
+  max-width: 600px;
+}
+
+.heroRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.heroRight img {
+  width: 100%;
+  max-width: 400px; /* Restricts the vector illustration sizing footprint */
+  height: auto;
+  display: block;
+}
+
+/* Typography elements */
+.heroLeftTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.heroLeftTitle h2 {
+  font-weight: 600;
+  color: rgb(56, 55, 55);
+  font-size: 52px;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.heroLeftTitle span {
+  font-weight: 600;
+  font-size: 52px;
+  color: #4caf4f;
+  display: block; /* Spans onto its own line neatly */
+}
+
+.heroLeftTitle p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #717171;
+  width: 100%;
+  max-width: 500px; /* Fluid restriction across small phone viewports */
+  margin: 0;
+}
+
+/* Link Button style system */
+.heroLeftBtn {
+  display: inline-block;
+  padding: 12px 32px;
+  background-color: #4caf4f;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  text-align: center;
+}
+
+.heroLeftBtn:hover {
+  background-color: #3e8e41;
+}
+
+/* ==========================================================================
+   TABLET & MOBILE RESPONSIVE BREAKPOINT LAYOUT (968px and below)
+   ========================================================================== */
+@media screen and (max-width: 968px) {
+  .heroContents {
+    flex-direction: column-reverse; /* Places text layout UNDER the image illustration for mobile */
+    justify-content: center;
+    gap: 3rem;
+    text-align: center;
+    padding: 60px 16px;
+  }
+
+  .heroLeft {
+    align-items: center;
+    flex: none;
+    width: 100%;
+  }
+
+  .heroRight {
+    flex: none;
+    width: 100%;
+  }
+
+  .heroRight img {
+    max-width: 280px; /* Fits phone screen configurations smoothly */
+  }
+
+  .heroLeftTitle h2,
+  .heroLeftTitle span {
+    font-size: 34px; /* Fluid typography sizing drop */
+    line-height: 1.2;
+  }
+}

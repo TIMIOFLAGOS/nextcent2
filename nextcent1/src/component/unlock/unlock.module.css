@@ -1,0 +1,119 @@
+/* Container Frame Context */
+.unlockContainer {
+  overflow: scroll;
+  width: 100%;
+  padding: 80px 24px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.unlockContents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem; /* Reduced from 6rem to avoid pushing content out on tablets */
+  max-width: 1150px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Left Image Section Fluid Configuration */
+.unlockLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 0; /* Fixes flexbox blowout bug */
+}
+
+.unlockLeft img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+}
+
+/* Right Content Column */
+.unlockRight {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1.2; /* Gives slightly more space weight to the typography block */
+  min-width: 0;
+}
+
+.unlockRightContent1 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.unlockRightContent1 h3 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #4d4d4d;
+  margin: 0;
+  width: 100%; /* Overrides any external fixed width definitions */
+}
+
+.unlockRightContent1 p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #717171;
+  margin: 0;
+  width: 100%;
+}
+
+/* Reusable Button styling */
+.btn {
+  padding: 12px 28px;
+  background-color: #4caf4f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+}
+
+/* ==========================================================================
+   TABLET & MOBILE BREAKPOINT (900px down to Mobile screens)
+   ========================================================================== */
+@media screen and (max-width: 900px) {
+  .unlockContainer {
+    padding: 40px 16px;
+  }
+
+  .unlockContents {
+    flex-direction: column; /* Stacks column components vertically */
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .unlockLeft, 
+  .unlockRight {
+    flex: none;
+    width: 100%;
+  }
+
+  .unlockLeft img {
+    max-width: 280px; /* Constrains image scale footprint on mobile */
+  }
+
+  .unlockRight {
+    align-items: center; /* Centers text and button cleanly on mobile layouts */
+  }
+
+  .unlockRightContent1 h3 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+}

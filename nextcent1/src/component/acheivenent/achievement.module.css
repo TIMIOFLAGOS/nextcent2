@@ -1,0 +1,115 @@
+.C {
+  width: 100%;
+}
+
+.acheivmentSection {
+  
+  margin-top: 5rem;
+  padding: 80px 24px;
+  background-color: #f5f7fa;
+}
+
+.acheivmentSectionContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.acheivmentSectionLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.acheivmentSectionLeft h3 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #4d4d4d;
+  margin: 0;
+}
+
+.acheivmentSectionLeft span {
+  color: #4caf4f;
+}
+
+/* Scoped width restriction to only the left paragraph description */
+.leftDescription {
+  max-width: 400px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #717171;
+  margin: 0;
+}
+
+/* Right layout grid metrics system layout */
+.acheivmentSectionRight {
+  display: flex;
+  gap: 4rem; /* Adds space between your two columns */
+}
+
+.acheivmentSectionRight1,
+.acheivmentSectionRight2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.acheivmentSectionRight1Contents1 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+
+.iconWrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.acheivmentSectionRight1Contents {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.acheivmentSectionRight1Contents h4 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  color: #4d4d4d;
+  margin: 0;
+}
+
+/* Generic item label layout configuration */
+.acheivmentSectionRight1Contents p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #717171;
+  margin: 0;
+}
+
+/* Mobile Responsiveness breakpoint layer hook */
+@media screen and (max-width: 768px) {
+  .acheivmentSectionContent {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+  
+  .acheivmentSectionRight {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+}

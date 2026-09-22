@@ -1,0 +1,108 @@
+/* ==========================================
+   1. GLOBAL / SHARED STYLES
+   ========================================== */
+/* Shared box shadow for all grid child divs to keep code clean */
+.parent > div,
+.parent1 > div {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #fff;
+    padding: 1rem; /* Added for inner spacing */
+}
+
+
+.reportContainer {
+
+border-radius: 40px;
+    background: #261E35;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* ==========================================
+   2. MOBILE FIRST / BASE STYLES (Small Screens)
+   ========================================== */
+.parent, 
+.parent1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;               
+}
+
+
+@media (min-width: 768px) {
+    
+
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 5rem; 
+    }
+    
+    .div1 {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        /* border-radius: 40px; */
+    }
+    
+    .div2 {
+        border-radius: 40px;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    .div3 {
+        border-radius: 40px;
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+
+    .div4 {
+        border-radius: 40px;
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    .div5 {
+        border-radius: 40px;
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .div6 {
+        border-radius: 40px;
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+
+
+    .parent1 {
+       
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 8px; 
+    }
+    
+    .div11 {
+        border-radius: 40px;
+     
+    }
+    .div21 {
+        border-radius: 40px;
+     
+    }
+    .div31 {
+        border-radius: 40px;
+     
+    }
+    .div41 {
+        border-radius: 40px;
+     
+    }
+    .div51 {
+        border-radius: 40px;
+     
+    }
+    .div61 {
+        border-radius: 40px;
+     
+    }
+}

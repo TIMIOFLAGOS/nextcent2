@@ -1,0 +1,113 @@
+/* Container layout and padding */
+.servicesContainer {
+  min-height: 100vh;
+  /* background-color: #f9fafb; */
+  padding: 4rem 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Typography for page headers */
+.servicesHeader {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 4rem auto;
+}
+
+.servicesHeader h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.025em;
+  margin-bottom: 1rem;
+}
+
+.servicesHeader p {
+  font-size: 1.125rem;
+  color: #4b5563;
+  line-height: 1.5;
+  width: 100%;
+}
+
+/* Responsive responsive grid layout */
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* Individual card designs */
+.serviceCard {
+  background-color: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  border: 1px solid #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Custom internal styling */
+.serviceIcon {
+  font-size: 2.25rem;
+  margin-bottom: 1.25rem;
+  display: inline-block;
+}
+
+.serviceTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.75rem;
+}
+
+.serviceDescription {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  flex-grow: 1; /* Ensures text aligns evenly and keeps buttons at bottom */
+}
+
+/* Interactive contextual link */
+.serviceLink {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4caf4f;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: color 0.15s ease;
+}
+
+.serviceLink span {
+  transition: transform 0.15s ease;
+}
+
+.serviceLink:hover {
+  color: #4338ca;
+}
+
+.serviceLink:hover span {
+  transform: translateX(4px);
+}
+
+/* Mobile responsive padding adjustments */
+@media (max-width: 640px) {
+  .services-container {
+    padding: 2.5rem 1rem;
+  }
+  
+  .servicesHeader h2 {
+    font-size: 1.75rem;
+  }
+}

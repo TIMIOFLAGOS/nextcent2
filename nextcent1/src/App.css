@@ -1,0 +1,26 @@
+:root {
+  --text: #6b6375;
+
+  --bg: #fff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+  /* color: #fff; */
+
+}
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px ;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

@@ -1,0 +1,136 @@
+ .loginContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9fafb;
+  padding: 1rem;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Card layout */
+.loginCard {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 2.5rem 2rem;
+  border-radius: 0.75rem;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Typography styling */
+.loginHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.loginHeader h2 {
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.5rem;
+}
+
+.loginHeader p {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+/* Form flow */
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.formGroup label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  background-color: #ffffff;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: #4caf4f;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.15);
+}
+
+/* Utilities (Checkbox & Link alignments) */
+.formOptions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.rememberMe {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rememberMe input {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  accent-color: #4caf4f;
+}
+
+.forgotPassword {
+  color: #4caf4f;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+  color: #4caf4f;
+}
+
+/* Action Button */
+.submitBtn {
+  width: 100%;
+  padding: 0.625rem 1rem;
+  background-color: #4caf4f;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  margin-top: 0.5rem;
+}
+
+.submitBtn:hover {
+  background-color: #4caf4f;
+}
+
+.submitBtn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.4);
+}

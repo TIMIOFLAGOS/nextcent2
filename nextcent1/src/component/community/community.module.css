@@ -1,0 +1,63 @@
+.communitySection {
+  margin-top: 3rem;
+
+}
+.community{
+  
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.communityContents {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.communityTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.communityTitle h2 {
+  width: 542px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  color: #717171;
+  text-align: center;
+}
+.communityTitle p {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0%;
+  color: #717171;
+
+  text-align: center;
+}
+
+
+
+.communityCardsAll {
+  display: flex;
+  flex-direction: row;
+ align-items: center;
+ justify-content: center;
+  gap: 2rem;
+
+}
+
+@media screen and (max-width: 800px) {
+  .communityCardsAll {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+  .communityTitle h2 {
+    width: 100%;
+  }
+
+}
