@@ -1,6 +1,6 @@
 
 import style from "./communityupdate.module.css";
-import Cucard from "../cucard/cucard.jsx";
+import Cucard from "./cucard/cucard.jsx";
 import { communityData } from "../../component/data.js";
 
 
